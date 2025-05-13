@@ -16,22 +16,28 @@ const items = ref<NavigationMenuItem[]>([
 </script>
 
 <template>
-  <div>
-    <header class="fixed top-0 z-30 bg-backg sm:ml-64 w-full">
-      <div class="px-9 py-5 flex justify-between border-b items-center">
-        <div class="mb-6 px-2 py-3">
-          <h1 class="text-lg font-bold text-gray-900">DASHBOARD</h1>
+  <div class= "">
+    <header class="bg-backg w-full border-b flex justify-center">
+      <UContainer class= "">
+        <div class="px-9 py-5 flex justify-between ">
+          <div class="mb-6 px-2 py-3">
+            <h1 class="text-lg font-bold text-gray-900">DASHBOARD</h1>
+          </div>
+          <div>
+            <UNavigationMenu :items="items" class="w-full justify-center" />
+          </div>
         </div>
-        <div >
-          <UNavigationMenu :items="items" class="w-full justify-center " />
-        </div>
-      </div>
+      </UContainer>
     </header>
   </div>
 </template>
 
-
-
+<style scoped>
+* {
+ /* border: solid 1px red;
+  box-sizing: border-box; */
+}
+</style>
 <!-- <script setup lang="ts">
 
 <template>

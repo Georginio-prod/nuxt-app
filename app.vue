@@ -4,7 +4,7 @@
     <Navbar />
 
     <div class="flex">
-      <Sidebar class="pt-30 pl-10" />
+      <Sidebar class=" pl-10" />
 
       <main class="flex-1 p-4 pt-20 h-screen">
         <NuxtPage />
