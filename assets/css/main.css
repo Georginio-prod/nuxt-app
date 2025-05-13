@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+* {
+    font-family: "Public Sans";
+    box-sizing: border-box;
+    margin: 0;
+}
